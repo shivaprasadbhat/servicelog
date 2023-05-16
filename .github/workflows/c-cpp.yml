@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - arch: ppc64le
+    - name: apt install libservicelog-devel
     - uses: actions/checkout@v3
     - name: bootstrap
       run: ./bootstrap.sh
